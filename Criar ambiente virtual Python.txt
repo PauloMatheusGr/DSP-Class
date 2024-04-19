@@ -1,0 +1,29 @@
+Criar ambiente virtual Python para ler o arquivo requirements.txt:
+1. No terminal: python3 -m venv /caminho_do_diretorio/nome_do_ambiente
+2. No terminal do Visual Studio Code: source /caminho_do_diretorio/nome_do_ambiente/bin/activate
+3. Nome do ambiente virtual deve aparecer no terminal
+4. Para instalar pacotes do arquivo requirements, no terminal do Visual Studio Code: pip install -r requirements.txt 
+Obs.: O arquivo requirements.txt deve estar no mesmo diretório do projeto Python em que se está trabalhando (e não do ambiente virtual)
+
+Salvar o ambiente virtual em um arquivo requirements.txt: 
+1. No terminal, ativar o ambiente virtual: source /caminho_do_diretorio/nome_do_ambiente/bin/activate
+2. Nome do ambiente virtual deve aparecer entre parênteses no terminal
+3. No terminal, para visualizar a lista de pacotes instalados no ambiente virtual: pip list
+4. No terminal, para salvar o ambiente virtual em um arquivo requirements.txt: pip freeze > requirements.txt
+5. Manter o arquivo requirements.txt no mesmo diretório do projeto Python (e não do ambiente virtual)
+Obs.: Se você quiser salvar o arquivo requirements.txt em um local específico: pip freeze > /caminho_do_diretorio/requirements.txt
+
+Instalar pacotes em um abiente virtual:
+1. No terminal, criar ambiente virtual (caso ainda não criado): python3 -m venv /caminho_do_diretorio/nome_do_ambiente
+2. No terminal do Visual Studio Code, ativar ambiente virtual: source /caminho_do_diretorio/nome_do_ambiente/bin/activate
+3. Nome do ambiente virtual deve aparecer no terminal
+4. Instalar pacotes no ambiente virtual: pip install NomeDoPacote
+Ex.: pip install numpy
+
+Ler ambiente virtual:
+1. No terminal do Visual Studio Code, ativar o ambiente virtual: source /caminho_do_diretorio/nome_do_ambiente/bin/activate
+2. NO Visual Studio, clicar em "Run all" para rodar o projeto.
+3. Selecionar "Python Environments..."
+3. Aparecerá uma lista de ambientes virtuais, caso não apareça o ambiente virtual na lista, digite "Ctrl+Shift+P", busque por "Python: Select Interpreter" e clique nele. Em sguida, clique em "Enter interpreter path..."
+5. Clique em "Find"
+6. Vá até o diretório do ambiente virtual desejado, entre na pasta "bin" e clique em um arquivo executável (com engrenagem) (Ex.: Python, Python3 ou Python3.10)
